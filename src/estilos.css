@@ -44,9 +44,9 @@ table{
 
 
 .saque{
-    font-size: 50px;
+    font-size: 28px;
+    padding-bottom: 4px;
     width: 50px;
-    margin-top: 12px;
     border-bottom: 4px solid #fff;
 }
 
@@ -128,10 +128,14 @@ table{
 
 
 .sign-final{
-    height: 20px;
     border-bottom: 4px solid #fff;
     border-right: none;
     background-color: none;
+}
+
+.sign-final th{
+    padding: 0px;
+    margin: 0px;
 }
 
 .final-row1{
