@@ -11,8 +11,10 @@ body{
 
 
 table{
-    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
     border-collapse: collapse;
+
 }
 
 .tabla-puntos-1 tbody{
@@ -102,7 +104,7 @@ table{
 }
 
 .puntos1{
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 
 .set{
@@ -126,14 +128,15 @@ table{
 
 
 .sign-final{
+    height: 20px;
     border-bottom: 4px solid #fff;
-    font-size: 25px;
     border-right: none;
     background-color: none;
 }
 
 .final-row1{
     width: 130px;
+    font-size: 25px;
     background-color: #fff;
     color: #000;
     border: none;
