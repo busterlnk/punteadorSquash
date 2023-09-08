@@ -1,0 +1,89 @@
+        puntoFinal.map((punto,i) => {
+            return ( 
+                <div>
+                   <table className="tabla-puntos-1" key={punto.PAREJA1+i}>
+                        <tbody>
+                            <tr>
+                                {puntoFinal.PAREJA1 !== undefined && puntoFinal.SAQUE1 !== undefined ?
+                                    <th className="parejas" colSpan="1">{puntoFinal.PAREJA1.replace(/['\\"]+/g, '').toUpperCase()}</th> :
+                                    console.log()
+                                }
+
+                                {puntoFinal.SAQUE1 !== undefined ?
+                                    <th className="saque">{puntoFinal.SAQUE1.replace(/['"]+/g, '')}</th> :
+                                    <th className="saque"></th>
+                                }
+                                {(puntoFinal.P11S !== '""' || puntoFinal.P21S !== '""') && puntoFinal.P11S !== undefined ?
+                                    <th className="set">{puntoFinal.P11S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P12S !== '""' || puntoFinal.P22S !== '""') && puntoFinal.P12S !== undefined ?
+                                    <th className="set">{puntoFinal.P12S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P13S !== '""' || puntoFinal.P23S !== '""') && puntoFinal.P13S !== undefined ?
+                                    <th className="set">{puntoFinal.P13S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P1PS !== '""' || puntoFinal.P2PS !== '""' || puntoFinal.PUNTUACION === '"TBR"')
+                                    && (puntoFinal.SAQUE1 !== '""' || puntoFinal.SAQUE2 !== '""' || puntoFinal.P1PS !== '"0"' || puntoFinal.P2PS !== '"0"')
+                                    && puntoFinal.P1PS !== undefined ?
+                                    puntoFinal.PUNTUACION === '"ORO"' ?
+                                        <th className="oro">{puntoFinal.P1PS.replace(/['"]+/g, '')}</th> : puntoFinal.PUNTUACION === '"TBR"' ?
+                                            <th className="tbr">{puntoFinal.P1PS.replace(/['"]+/g, '')}</th> :
+                                            <th className="puntos">{puntoFinal.P1PS.replace(/['"]+/g, '')}</th>
+
+                                    :
+                                    console.log()
+                                }
+                            </tr>
+                            <tr>
+                                {puntoFinal.PAREJA2 !== undefined && puntoFinal.SAQUE2 !== undefined ?
+                                    <th className="parejas" colSpan="1">{puntoFinal.PAREJA2.replace(/['\\"]+/g, '').toUpperCase()}</th> :
+                                    console.log()
+                                }
+                                {puntoFinal.SAQUE2 !== undefined ?
+                                    <th className="saque">{puntoFinal.SAQUE2.replace(/['"]+/g, '')}</th> :
+                                    <th className="saque"></th>
+                                }
+
+                                {(puntoFinal.P11S !== '""' || puntoFinal.P21S !== '""') && puntoFinal.P11S !== undefined ?
+                                    <th className="set">{puntoFinal.P21S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P12S !== '""' || puntoFinal.P22S !== '""') && puntoFinal.P22S !== undefined ?
+                                    <th className="set">{puntoFinal.P22S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P13S !== '""' || puntoFinal.P23S !== '""') && puntoFinal.P23S !== undefined ?
+                                    <th className="set">{puntoFinal.P23S.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+
+                                {(puntoFinal.P1PS !== '""' || puntoFinal.P2PS !== '""' || puntoFinal.PUNTUACION === '"TBR"')
+                                    && (puntoFinal.SAQUE1 !== '""' || puntoFinal.SAQUE2 !== '""' || puntoFinal.P1PS !== '"0"' || puntoFinal.P2PS !== '"0"')
+                                    && puntoFinal.P2PS !== undefined ?
+                                    puntoFinal.PUNTUACION === '"ORO"' ?
+                                        <th className="oro">{puntoFinal.P2PS.replace(/['"]+/g, '')}</th> :
+                                        puntoFinal.PUNTUACION === '"TBR"' ?
+                                            <th className="tbr">{puntoFinal.P2PS.replace(/['"]+/g, '')}</th> :
+                                            <th className="puntos">{puntoFinal.P2PS.replace(/['"]+/g, '')}</th>
+                                    :
+                                    console.log()
+                                }
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        )})
