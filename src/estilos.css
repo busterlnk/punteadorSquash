@@ -11,10 +11,8 @@ body{
 
 
 table{
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-bottom: 50px;
     border-collapse: collapse;
-
 }
 
 .tabla-puntos-1 tbody{
@@ -128,8 +126,8 @@ table{
 
 
 .sign-final{
-    height: 20px;
     border-bottom: 4px solid #fff;
+    font-size: 25px;
     border-right: none;
     background-color: none;
 }
