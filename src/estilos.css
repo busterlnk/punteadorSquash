@@ -3,7 +3,7 @@
 }
 
 body{
-    font-size: 40px;
+    font-size: 30px;
     max-width: 1920px;
     color: #fff;  
     background: #00ff00;  
@@ -45,7 +45,7 @@ table{
 
 .saque{
     font-size: 50px;
-    width: 85px;
+    width: 50px;
     margin-top: 12px;
     border-bottom: 4px solid #fff;
 }
@@ -66,7 +66,7 @@ table{
     border-bottom: 4px solid #fff;
     width: auto;
     min-height: 86px;
-    min-width: 400px;
+    min-width: 450px;
     justify-content: center;
     text-align-last: right;
 }
@@ -74,8 +74,7 @@ table{
 .parejas-squad2{
     border-bottom: 4px solid #fff;
     width: auto;
-    min-height: 86px;
-    min-width: 400px;
+    min-width: 450px;
     justify-content: center;
     text-align-last: left;
 }
@@ -116,7 +115,7 @@ table{
 }
 
 .set1{
-    width: 75px;
+    width: 50px;
     background-color: black;
     border-bottom: 4px solid #fff;
     border-left: 4px solid #fff;
@@ -136,9 +135,7 @@ table{
 }
 
 .final-row1{
-    width: 180px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 130px;
     background-color: #fff;
     color: #000;
     border: none;
