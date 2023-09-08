@@ -3,6 +3,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import './estilos.css'
 
+
 const Contador = () => {
     const [puntoFinal, cambiarPuntoFinal] = useState({});
 
@@ -29,9 +30,9 @@ const Contador = () => {
             })
         }, []);
     return (
+
         <div>
             {Array.isArray(puntoFinal) ? puntoFinal.map((partido, index) => {
-                console.log(partido)
                     return (
                     <div key={partido+index}>
                         <table className='tabla-squad'>
